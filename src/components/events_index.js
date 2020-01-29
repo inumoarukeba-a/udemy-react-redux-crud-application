@@ -12,6 +12,7 @@ import {
 } from "material-ui/Table";
 import FloatingActionButton from "material-ui/FloatingActionButton";
 import ContentAdd from "material-ui/svg-icons/content/add";
+
 import { readEvents } from "../actions";
 
 class EventsIndex extends Component {
@@ -41,10 +42,11 @@ class EventsIndex extends Component {
       <React.Fragment>
         <FloatingActionButton
           style={style}
-          containerElement={<Link to="/events/new"></Link>}
+          containerElement={<Link to="/events/new" />}
         >
-          <ContentAdd></ContentAdd>
+          <ContentAdd />
         </FloatingActionButton>
+
         <Table>
           <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
             <TableRow>
